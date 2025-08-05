@@ -4,10 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calorie AI Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     </head>
     <body>
+     <section id="header">
+        <img src="logo.png" alt="Calorie Tracker Logo" class="logo" width="75" height="75">
+        <h1>Calorie AI Tracker</h1>
+    </section>
+        <section id="calorieLog">
+            <div class = "calorieLogHeader">
         <h1>Welcome to Calorie AI Tracker</h1>
+        <p>Your personal assistant for tracking calorie intake and managing your diet.</p>
+        <form id="food-wrapper"> 
+        <div class="input-group"> 
+            <textarea id="foodItem" placeholder="Describe your food…"></textarea>
+            <input type="image" src="paper-plane-2563.svg" id="submitButton">
+        </div>
+        </form>
+        </div>
+        </section>
+        <section id="calorieList">
+            <ul id="calorieItems"></ul>
+        </section>
+        <section id="calorieSummary">
+            <div class="container">
+                <ul class="calorieSummaryList"></ul>
+            </div>
+        </section>
     </body>
-
     <script src="script.js"></script>
 </html>
