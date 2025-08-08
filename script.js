@@ -45,7 +45,7 @@ form.addEventListener('submit', async function(e) {
         document.getElementById('calorieItems').prepend(widget);
         e.target.reset();
     } finally {
-        // Re-enable button after request completes
+        // Re-enable button
         submitButton.disabled = false;
     }
 });
