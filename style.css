@@ -72,17 +72,26 @@ input[type="image"] {
 }
 
 .frosted-widget {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 24px;
-  margin: 16px auto;
-  max-width: 400px;
+  background: rgba(255, 255, 255, 0.40); 
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  backdrop-filter: blur(16px); 
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  padding: 28px;
+  margin: 20px auto;
+  max-width: 420px;
   color: #222;
   font-size: 1.1rem;
+  transition: box-shadow 0.3s;
+  opacity: 0;
+  animation: fadeInWidget 0.7s ease forwards;
+}
+
+@keyframes fadeInWidget {
+  to {
+    opacity: 1;
+  }
 }
 
 button#submitButton {
