@@ -37,7 +37,6 @@ If you want to run a backend proxy for security, see [Security Note](#security-n
     ```js
     export const chatApiKey = "YOUR_OPENAI_API_KEY";
     ```
-- **Warning:** Never commit your real API key to a public repo!
 
 ### 4. Run locally
 
